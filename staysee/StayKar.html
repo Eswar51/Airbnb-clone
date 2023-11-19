@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>'Stay'kar - Your Home Away from Home</title>
+</head>
+<body>
+    <header>
+        <h1 style='font-family:cursive;text-align:center;'>'Stay'kar - Your Home Away from Home</h1>
+	  
+	  <h6>(Airbnb's clone)</h6>
+    </header>
+
+    <section id="filters">
+
+	  <h3 style='font-family:cursive;text-align:center;'>'Stay'kar - Have a comfortable stay like home, while you are away from home</h3>
+	  <h4 style='font-family:cursive;text-align:center;'>Have a Budget-friendly , yet Enorgonomic stay</h4>
+        <label for="location">Location:</label>
+        <input type="text" id="location">
+	  
+        
+        <label for="price">Price Range:</label>
+        <input type="range" id="price" min="100" max="10000">
+        <span id="price-value"></span>
+
+        <button onclick="applyFilters()">Apply Filters</button>
+    </section>
+
+    <section id="property-list">
+        <!-- Property listings will be displayed here -->
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
